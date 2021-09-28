@@ -9,6 +9,8 @@
         .cont{
             position: absolute;
             display: flex;
+            width: 400px;
+            height: 300px;
            
             flex-direction: column;
           
@@ -19,6 +21,14 @@
         }
         .title{
             text-decoration: underline;
+            text-align: center;
+            background-color: cornsilk;
+            border-style: dashed;
+        }
+        .box{
+            display: block;
+            text-align: center;
+            background-color: gainsboro;
         }
     </style>
 </head>
@@ -27,32 +37,36 @@
     <h1 class="title">
         Order Page
     </h1>
-    <form action="">
-        <div>
-            Date: <input type="date"> 
-        </div>
-        <br>
-        <div>
-            Quantity: <input type="number">
-        </div>
-        <br>
-        <div>
-            Size: L <input type="radio"> XL <input type="radio">
-        </div>
-        <br>
-        <div>
-            <label for="company">Company</label>
-            <select name="" id="">
-                <option value="">puma</option>
-                <option value="">nike</option>
-                <option value="">hrx</option>
-            </select>
-        </div>
-        <br>
-        <div>
-            <input type="submit">
-        </div>
-    </form>
+    <div class="box">
+        <form action="">
+            <div>
+                Date: <input type="date" > 
+            </div>
+            <br>
+            <div>
+                Quantity: <input type="number" class="form-control">
+            </div>
+            <br>
+            <div>
+                Size: L <input type="radio"> XL <input type="radio">
+            </div>
+            <br>
+            <div>
+                <label for="company">Company</label>
+                <select name="" id="">
+                    <option value="">puma</option>
+                    <option value="">nike</option>
+                    <option value="">hrx</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div>
+                <input type="submit" >
+            </div>
+        </form>
+    </div>
+   
 </div>
 </body>
 </html>
